@@ -1,0 +1,5 @@
+# Dependencias adicionales para generar articulo/articulo.docx (no necesarias para los experimentos)
+python-docx==1.2.0
+latex2mathml==3.81.1
+# Las ecuaciones nativas de Word usan la hoja MML2OMML.XSL que instala Microsoft Office.
+# Sin Office, el generador escribe las ecuaciones como texto LaTeX y avisa con una advertencia.

@@ -1,0 +1,20 @@
+{
+  "barrido_sigma.csv": "2c890d200501bf86b83178a4c70d62bb42b0e1bf6274c18e8550201346c06690",
+  "comparacion_escenarios.csv": "fd5c9049b64adf05d2e6e3619b13a84a0a0f3e8611ccb6c5e2b1dfab785ab25f",
+  "curvas_bw.csv": "da6dff06f6c1956bc04ac0e55b0647377b6de59e383446a4eb9c00511d88f974",
+  "pi_analitico.csv": "ec08ee116b4d32a3f909eefb0c9a4982105973b9db504854151b2f30d6a4fa26",
+  "pi_simulado.csv": "ccb4de1c6cbbd62c92bf5d94a007098fb413861853ff70b1b9dd06eb6a868cfe",
+  "propiedades_analiticas.csv": "f6a1a749bffd7e08032263674a03b553fd9b3a3990a8a7a22ef7f5a39e964161",
+  "pruebas_pareadas.csv": "b4f2012623254b030ee209d341b72a2f1340b1304c15207c52b010734a3fecd8",
+  "reinicios_bw.csv": "225a61a96cbe8dea1d2bf16ca8b38f61d855de034fe6137cf0745b7b5d9c2b2c",
+  "replicas_escenarios.csv": "30788ed6954d527a98ecf740ac0b78fcef8c04d5817c56352c5b3507a2f1c2ea",
+  "resumen_barrido_sigma.csv": "df66f4d3001e09bc90cad6ca1e2f5575a97f77a45b2f9a46dc6c01717c3b8baf",
+  "resumen_escenarios.csv": "4ae0c336bbaee1dcdf950dab784db540251a59a0d1bd6bccb39e88918bd29c83",
+  "resumen_tamano_muestra.csv": "c032a123bc41c9aea8c0c15f6f61c86e070bd77e8aa8b9e900bd37c85f12898f",
+  "resumen_transiciones_espurias.csv": "d10ff96efa01d3046f6b5e5360779b73487d7bfb840286cc8d397bf15cb758b6",
+  "sensibilidad_A_global_src.csv": "5183390d5c7d7677ca6ebb96a90ccbc26daf1ace300e749252a55eda49fb5013",
+  "sensibilidad_A_oat.csv": "07172a5ab7398adfe559d7b31601cb526260e138b9233e20de7a1813fb9e22c2",
+  "tamano_muestra.csv": "d1e33d9c9623e7e5be6b678b511ffb958f7fb40e087bc99349c01c66ae149279",
+  "transiciones_espurias.csv": "50b52e8be2f49c0a7acf52c0278a90d954eac52921b00d72839f5397f6c03165",
+  "_sha256_contenido_replicas_escenarios(redondeo 8 dec.)": "ddff409f8d743d969302022284343dac54714aa593df92939485176d108486ab"
+}

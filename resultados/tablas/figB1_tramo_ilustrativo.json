@@ -1,0 +1,6 @@
+{
+  "tramo": 105,
+  "aciertos_ingenua": 13,
+  "aciertos_viterbi": 23,
+  "T": 25
+}

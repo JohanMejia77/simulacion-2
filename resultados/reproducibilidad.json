@@ -1,0 +1,79 @@
+{
+  "R": 10,
+  "sha256_corrida_1": "332eb4f953a6945c2e888f6c35cc90bcea327205f5d6c3de631420be7b6281b6",
+  "sha256_corrida_2": "332eb4f953a6945c2e888f6c35cc90bcea327205f5d6c3de631420be7b6281b6",
+  "identicas_misma_semilla": true,
+  "sha256_semilla_alternativa": "fd7e3159856883ed358e5e2ba634987b3d8c837dc5883475312bb98ebe655ec5",
+  "difiere_con_otra_semilla": true,
+  "comparacion_estadistica": {
+    "exactitud_viterbi": {
+      "semilla_base": {
+        "n": 10,
+        "media": 0.9706000000000001,
+        "de": 0.0030955164709983753,
+        "min": 0.9662,
+        "max": 0.9748,
+        "ic_inf": 0.9683856009149255,
+        "ic_sup": 0.9728143990850747,
+        "semiamplitud": 0.0022143990850746285
+      },
+      "semilla_alternativa": {
+        "n": 10,
+        "media": 0.97392,
+        "de": 0.0022255086809286873,
+        "min": 0.971,
+        "max": 0.9766,
+        "ic_inf": 0.9723279669958,
+        "ic_sup": 0.9755120330042,
+        "semiamplitud": 0.0015920330042000009
+      },
+      "ic_se_solapan": true
+    },
+    "exactitud_bw": {
+      "semilla_base": {
+        "n": 10,
+        "media": 0.9702999999999999,
+        "de": 0.0032731228717134174,
+        "min": 0.9662,
+        "max": 0.9756,
+        "ic_inf": 0.9679585489496292,
+        "ic_sup": 0.9726414510503707,
+        "semiamplitud": 0.002341451050370727
+      },
+      "semilla_alternativa": {
+        "n": 10,
+        "media": 0.9734200000000002,
+        "de": 0.002441220095680735,
+        "min": 0.9694,
+        "max": 0.9766,
+        "ic_inf": 0.9716736563455606,
+        "ic_sup": 0.9751663436544398,
+        "semiamplitud": 0.0017463436544395807
+      },
+      "ic_se_solapan": true
+    },
+    "exactitud_ingenua": {
+      "semilla_base": {
+        "n": 10,
+        "media": 0.9179799999999998,
+        "de": 0.004661377955545386,
+        "min": 0.9128,
+        "max": 0.9264,
+        "ic_inf": 0.914645451088161,
+        "ic_sup": 0.9213145489118386,
+        "semiamplitud": 0.00333454891183881
+      },
+      "semilla_alternativa": {
+        "n": 10,
+        "media": 0.9178599999999999,
+        "de": 0.0039158367915144016,
+        "min": 0.9112,
+        "max": 0.9234,
+        "ic_inf": 0.9150587791085361,
+        "ic_sup": 0.9206612208914637,
+        "semiamplitud": 0.002801220891463837
+      },
+      "ic_se_solapan": true
+    }
+  }
+}

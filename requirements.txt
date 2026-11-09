@@ -1,0 +1,7 @@
+# Entorno del modelo y los experimentos (versiones exactas usadas en el artículo; Python 3.12.10)
+numpy==2.5.4
+scipy==1.18.1
+pandas==3.1.1
+matplotlib==3.11.2
+hmmlearn==0.3.3   # solo para validar la implementación propia (tests/test_hmm.py)
+pytest==9.2.0

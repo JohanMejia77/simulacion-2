@@ -1,0 +1,86 @@
+{
+  "_descripcion": "Parámetros del HMM de deterioro de pavimento (IRI). Unidades de IRI en m/km; paso temporal = 1 año. Todos los valores son supuestos de diseño documentados en el artículo (sección Metodología).",
+  "semilla_maestra": 20261107,
+  "estados": ["Bueno", "Regular", "Malo", "Crítico"],
+  "simbolos": ["IRI < 1.50", "1.50 ≤ IRI < 2.68", "2.68 ≤ IRI < 4.00", "IRI ≥ 4.00"],
+  "umbrales_iri": [1.50, 2.68, 4.00],
+  "rangos_iri_estado": [[0.80, 1.50], [1.50, 2.68], [2.68, 4.00], [4.00, 6.00]],
+  "simulacion": {
+    "N_segmentos": 200,
+    "T_anios": 25,
+    "R_replicas": 100
+  },
+  "distribuciones_iniciales": {
+    "envejecida": [0.40, 0.30, 0.20, 0.10],
+    "nueva": [1.0, 0.0, 0.0, 0.0],
+    "deteriorada": [0.10, 0.20, 0.30, 0.40]
+  },
+  "pi0_base": "envejecida",
+  "transicion_base": {
+    "d_BR": 0.12,
+    "d_BM": 0.03,
+    "d_RM": 0.16,
+    "d_RC": 0.04,
+    "d_MC": 0.22,
+    "r_M": 0.0,
+    "r_C": 0.35,
+    "factor_transito": 1.0
+  },
+  "error_base": {
+    "distribucion": "normal",
+    "sigma": 0.15
+  },
+  "escenarios": [
+    {
+      "id": "E1",
+      "nombre": "Base",
+      "descripcion": "Tránsito medio, política correctiva (solo se rehabilita lo crítico), perfilómetro de alta precisión (sigma = 0.15 m/km, error normal).",
+      "transicion": {},
+      "error": {}
+    },
+    {
+      "id": "E2",
+      "nombre": "Tránsito alto",
+      "descripcion": "Como E1, pero las probabilidades de deterioro se multiplican por 1.5 (mayor carga de vehículos pesados).",
+      "transicion": {"factor_transito": 1.5},
+      "error": {}
+    },
+    {
+      "id": "E3",
+      "nombre": "Política preventiva",
+      "descripcion": "Como E1, pero el 30 % de los tramos en estado Malo recibe cada año una intervención preventiva que los devuelve a Bueno.",
+      "transicion": {"r_M": 0.30},
+      "error": {}
+    },
+    {
+      "id": "E4",
+      "nombre": "Medición de bajo costo",
+      "descripcion": "Como E1, pero la auscultación se hace con un sistema de bajo costo (p. ej., teléfono inteligente): error normal con sigma = 0.50 m/km.",
+      "transicion": {},
+      "error": {"distribucion": "normal", "sigma": 0.50}
+    },
+    {
+      "id": "E5",
+      "nombre": "Error de colas pesadas",
+      "descripcion": "Como E4 (misma desviación estándar, 0.50 m/km), pero el error sigue una t de Student con 3 grados de libertad (valores atípicos frecuentes).",
+      "transicion": {},
+      "error": {"distribucion": "t", "sigma": 0.50, "gl": 3}
+    }
+  ],
+  "baum_welch": {
+    "max_iter": 1000,
+    "tol": 1e-7,
+    "diag_B0": 0.70
+  },
+  "sensibilidad": {
+    "sigmas": [0.05, 0.10, 0.15, 0.20, 0.30, 0.40, 0.50, 0.60, 0.80, 1.00],
+    "R_sigma": 40,
+    "tamanos_N": [25, 50, 100, 200, 400],
+    "R_tamano": 30,
+    "variacion_relativa_A": 0.20,
+    "muestras_globales_A": 4000,
+    "horizonte_pi": 40,
+    "R_pi": 100,
+    "reinicios_bw": 20
+  }
+}

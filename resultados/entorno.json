@@ -1,0 +1,18 @@
+{
+  "fecha_utc": "2026-11-09T01:51:57+00:00",
+  "python": "3.15.2",
+  "implementacion": "CPython",
+  "sistema": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "procesador": "arm",
+  "paquetes": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.1.1",
+    "matplotlib": "3.11.2",
+    "hmmlearn": "0.3.3",
+    "pytest": "9.2.0"
+  },
+  "semilla_maestra": 20261107,
+  "generador": "numpy.random.Generator(PCG64) con SeedSequence([semilla, experimento, índice])",
+  "sha256_config": "560c1afa0e21fd34d7077a93a0b7a174935ddbc4945b30f8cb1b1a05c105e1f5"
+}
