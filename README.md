@@ -41,7 +41,6 @@ Los algoritmos Forward, Backward, Viterbi y Baum–Welch están implementados de
 │   ├── construir_articulo.py     # genera articulo.docx con ecuaciones nativas de Word
 │   ├── articulo.docx             # artículo final (carta, interlineado 1.5, IEEE)
 │   └── articulo.pdf              # versión PDF del artículo
-├── pitch/guion_pitch.md          # guion del video (3 min, tres integrantes)
 ├── requirements.txt              # versiones exactas
 └── LICENSE
 ```
